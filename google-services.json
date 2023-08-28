@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "270556400804",
+    "project_id": "findme-25a2d",
+    "storage_bucket": "findme-25a2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270556400804:android:64d4d431c50f0f2b1caa31",
+        "android_client_info": {
+          "package_name": "com.juniorfixhow.FindMe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270556400804-7eiqlnqdt0a7jvegjocceaknbv6kdj45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juniorfixhow.FindMe",
+            "certificate_hash": "d8b45d273ddb377c581b60795da88419883b399a"
+          }
+        },
+        {
+          "client_id": "270556400804-fdkrrfg7pm6e47ea7dsbhnbvfb8179vb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juniorfixhow.FindMe",
+            "certificate_hash": "d0654b45fa01b867999c93bb60b376c2a5ffba18"
+          }
+        },
+        {
+          "client_id": "270556400804-m98iv2kbdtkjrmij3f8o6ok56m7ckcmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZmjximefpJTvxC0SuPy5sleXEFRp-6l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270556400804-0ep8eqvhkkt2lc6bv4qtcsu4j9fl4oeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

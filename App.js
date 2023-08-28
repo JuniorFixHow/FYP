@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'expo-firestore-offline-persistence'
+import 'expo-dev-client';
+import React from 'react';
 
-export default function App() {
+import {AuthContextProvider } from './src/app/components/context/authContext/AuthContext';
+import AuthScreens from './src/app/screens/auth/AuthScreens';
+import { SettingsContextProvider } from './src/app/components/context/settings/SettingsContext';
+import { FetchUsersContextProvider } from './src/app/components/context/fetch/fetchUsersContext';
+// import registerNNPushToken from 'native-notify';
+
+
+
+  export default function App() {
+    // registerNNPushToken(9298, 'jBjeFjhubb8SwW2aYHDxRP');
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+   
+      <SettingsContextProvider>
+        <AuthContextProvider>
+    <FetchUsersContextProvider>
+          <AuthScreens />
+    </FetchUsersContextProvider>
+        </AuthContextProvider>
+      </SettingsContextProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

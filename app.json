@@ -3,28 +3,36 @@
     "name": "FindMe",
     "slug": "FindMe",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/icon1.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/splashscreen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0EB4CB"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "plugins": [
+      "expo-localization",
+      "@react-native-google-signin/google-signin"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9350f49b-277d-45ef-b5b6-038a5b55070e"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.juniorfixhow.FindMe",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon1.png",
+        "backgroundColor": "#0EB4CB"
+      }
     }
-  }
+    
+  },
+  "name": "FindMe"
 }
